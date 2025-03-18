@@ -58,6 +58,15 @@ pyinstaller setup_pyinstaller.spec
 
 Os arquivos gerados serão salvos no diretório `dist`.
 
+Certifique-se de que o arquivo `login.spec` esteja salvo no diretório raiz do projeto `d:\controle_de_volumes` e execute-o a partir desse diretório:
+
+```bash
+cd d:\controle_de_volumes
+pyinstaller login.spec
+```
+
+Os arquivos gerados serão salvos no diretório `dist`.
+
 ## Depuração
 
 Para depurar o executável, você pode usar as seguintes opções:

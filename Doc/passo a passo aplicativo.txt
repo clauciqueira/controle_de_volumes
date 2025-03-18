@@ -1,0 +1,2 @@
+criar executável com comando pyinstaller login.spec vai rodar login.spec
+criar instalador com aplicativo inno e script setup.iss
