@@ -1,0 +1,59 @@
+Aqui está um passo a passo para criar um instalador para um código Python usando pip e BeeWare:
+
+# Requisitos
+- Python 3.6 ou superior
+- pip 19.0 ou superior
+- BeeWare 0.12.0 ou superior
+
+# Passo 1: Instalar o BeeWare
+Abra o terminal e execute o comando:
+```
+pip install beeware
+```
+# Passo 2: Criar um arquivo `setup.py`
+Crie um arquivo `setup.py` no diretório raiz do seu projeto com o seguinte conteúdo:
+```
+from setuptools import setup
+
+setup(
+    name='Meu Projeto',
+    version='1.0',
+    author='Claudecir C. Lemos',
+    author_email='c.ciqueira@hotmail.com',
+    packages=['meu_projeto'],
+    install_requires=['biblioteca1', 'biblioteca2'],
+    entry_points={
+        'console_scripts': ['meu_projeto=meu_projeto.main:main'],
+    },
+)
+```
+Substitua `Meu Projeto`, `Seu Nome`, `seu_email@example.com`, `meu_projeto`, `biblioteca1` e `biblioteca2` com os valores correspondentes ao seu projeto.
+
+# Passo 3: Criar um arquivo `briefcase.yml`
+Crie um arquivo `briefcase.yml` no diretório raiz do seu projeto com o seguinte conteúdo:
+```
+project_type: python
+project_name: Meu Projeto
+project_version: 1.0
+author: Claudecir C. Lemos
+author_email: c.ciqueira@hotmail.com
+```
+Substitua `Meu Projeto`, `Seu Nome` e `c.ciqueira@hotmail.com` com os valores correspondentes ao seu projeto.
+
+# Passo 4: Criar o instalador
+Abra o terminal e execute o comando:
+```
+briefcase create
+```
+Isso criará um diretório `dist` contendo o instalador do seu projeto.
+
+# Passo 5: Personalizar o instalador
+Você pode personalizar o instalador adicionando um arquivo `README.md` e um arquivo `LICENSE` ao diretório `dist`.
+
+# Passo 6: Distribuir o instalador
+Você pode distribuir o instalador compartilhando o diretório `dist` com os usuários. Eles podem instalar o seu projeto executando o arquivo `install.py` no diretório `dist`.
+
+# Dicas
+- Certifique-se de que o seu projeto esteja funcionando corretamente antes de criar o instalador.
+- Verifique se o seu projeto está usando bibliotecas que sejam compatíveis com a versão do Python que você está usando.
+- Teste o instalador em diferentes ambientes para garantir que ele esteja funcionando corretamente. 

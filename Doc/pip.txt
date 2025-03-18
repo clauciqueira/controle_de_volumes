@@ -1,0 +1,46 @@
+pip install --upgrade PyQt5
+python.exe -m pip install --upgrade pip
+
+pip uninstall PyQt5
+pip cache purge
+pip install PyQt5
+
+
+pip install bcrypt # senhas
+
+pip install PyQt5 mysql-connector-python bcrypt
+
+pip install reportlab
+*************************************************
+pip install pyinstaller
+pip install --upgrade pyinstaller
+
+criar login.spec
+execute pyinstaller login.spec
+executável na diretório dist
+
+pip install --upgrade pyinstaller
+
+executável
+pip install auto-py-to-exe
+
+auto-py-to-exe
+**************************
+
+android
+
+pip3 install kivy  
+
+******************
+criar instalador
+pip install beeware
+******************
+
+
+instalar projeto
+pip install
+
+o Briefcase para criar um aplicativo executável com o comando:
+
+briefcase run  
+briefcase create  
